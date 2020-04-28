@@ -1,31 +1,38 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-   <div class="main-header">
+   <div class="main-header clearfix">
+       <div class="top-bar">
     <div>
         <h1>Student Name</h1>
     </div>
     
-    <div class="main-nav">
+    <nav class="main-nav clearfix">
 <ul>
-    <li>Home</li>
-    <li>Portfolio</li>
-    <li>Contact</li>
+    <li><a href="#">Home</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#contact">Contact</a></li>
 </ul>
-   </div>
+</nav>
 
-   <div class="intro">
+</div>
+
+   <div class="intro clearfix">
        <img class="image-head" src="images/responsive-layout-profile.png" alt="My Main Profile Image">
         <p class="text-intro">Hi! I'm a front end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
    </div>
 </div>
 
+<section id="portfolio">
+<div class="cats clearfix">
 <h3>Portfolio</h3>
 
 <div class="cat">
@@ -64,18 +71,32 @@
     <p class="text-cat">Someone can enter in the numbers they want, and press the big blue button and get the result</p>
 </div>
 
-<footer class="main-header">
-    <h3>CONTACT</h3>
-    <p class="text-intro">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-    <p class="text-intro">Phone <b>+1 (111) 555 - 1234</b></p>
-    <p class="text-intro">Email <b>email@yoursite.com</b></p>
+</div>
+</section>
 
-    <hr>
+<section id="contact">
+
+<footer class="main-footer clearfix">
+    <h3>CONTACT</h3>
+    <p class="text-outro">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+    <p class="text-contact">Phone <b>+1 (111) 555 - 1234</b></p>
+    <p class="text-contact">Email <b>email@yoursite.com</b></p>
+    
+    <hr class="divider">
 
     <div class="ft-last">
 
     <h4>Student Name</h4>
     <h5>BACK TO TOP</h5>
+    <nav class="main-nav-footer">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</section>
+
 </div>
 
 </footer>
